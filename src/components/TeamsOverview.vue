@@ -7,7 +7,7 @@
         <form v-on:submit.prevent="hideForm" v-show="index===editedTeam">
           <input v-model="teams[index].name">
         </form>
-        <button v-on:click="remove(index)">Remove</button>
+        <button v-on:click="remove(index)">❌</button>
       </li>
     </ul>
   </div>
