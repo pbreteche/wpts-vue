@@ -18,6 +18,10 @@ export default class TeamCreation extends Vue {
         this.$store.commit('addTeam', this.newTeamName);
         this.newTeamName = '';
     }
+
+    get teams() {
+        return this.$store.state.teams;
+    }
 }
 </script>
 

@@ -39,6 +39,7 @@ export default class TeamsOverview extends Vue {
   }
 
   private draw() {
+    this.$store.commit('draw');
     this.$router.push('draw');
   }
 }
